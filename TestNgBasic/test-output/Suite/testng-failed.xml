@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.class02.SoftAssertions">
+        <methods>
+          <include name="logoAndLOgin"/>
+          <include name="open"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.class02.SoftAssertions -->
+      <class name="com.class01.TitleLogoAndLoginVerification">
+        <methods>
+          <include name="LogoValidation"/>
+          <include name="validLogin"/>
+          <include name="openAndNavigate"/>
+          <include name="titleVAlidation"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.class01.TitleLogoAndLoginVerification -->
+      <class name="com.class02.AssertionsDemo">
+        <methods>
+          <include name="titleValidation"/>
+          <include name="openAndNavigate"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.class02.AssertionsDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
