@@ -10,9 +10,8 @@ public class TaskAmazon {
 		
     driver.get("https://www.amazon.com");
 		
-        String Title=driver.getTitle();
-	
-		String expecedTitle="Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
+ String Title=driver.getTitle();
+ String expecedTitle="Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
           
 		if(expecedTitle.equals(Title)) {
     	   System.out.println("Title Displayed");

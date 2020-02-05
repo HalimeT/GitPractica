@@ -10,9 +10,13 @@ public class hello {
         System.out.println("yusf");
         System.out.println("8020409");
         System.out.println("i like to play soccer");   
+<<<<<<< Updated upstream
        
           System.out.println("i added ");
         	
+=======
+        System.out.println();	
+>>>>>>> Stashed changes
         	
         	
         	

@@ -10,6 +10,21 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.class02.AssertionsDemo -->
+      <class name="com.class02.Task">
+        <methods>
+          <include name="open"/>
+          <include name="tearDown"/>
+          <include name="verifyLabel"/>
+        </methods>
+      </class> <!-- com.class02.Task -->
+      <class name="com.class01.TitleLogoAndLoginVerification">
+        <methods>
+          <include name="LogoValidation"/>
+          <include name="validLogin"/>
+          <include name="openAndNavigate"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.class01.TitleLogoAndLoginVerification -->
     </classes>
   </test> <!-- Login Test(failed) -->
   <test thread-count="5" name="Add Employee(failed)">

@@ -36,7 +36,7 @@ public class Assert extends CommonMethods {
 	    @Test(priority=2, dependsOnMethods= {"validationOfMessage"}, enabled=false)
 	    public void validationOfLogo() {
 	        driver.findElement(By.id("txtUsername")).sendKeys("Admin");
-	        driver.findElement(By.id("txtPassword")).sendKeys("Hum@nhrm123");
+	        driver.findElement(By.id("txtPassword")).sendKeys("Syntax@123");
 	        driver.findElement(By.id("btnLogin")).click();
 	       boolean isTrue = driver.findElement(By.xpath("//img[contains(@src,'syntax.png')]")).isDisplayed();
 	     //  Assert.assertTrue(
@@ -50,7 +50,7 @@ public class Assert extends CommonMethods {
 	        driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 	        driver.findElement(By.id("btnLogin")).click();
 	        WebElement error = driver.findElement(By.id("spanMessage"));
-	        String expectedError="Password cannot be empty";
+	        String expectedError="Password canno be empty";
 	        if (error.isDisplayed()) {
 	            System.out.println("error is dislayed");
 	            if(error.getText().equals(expectedError)) {

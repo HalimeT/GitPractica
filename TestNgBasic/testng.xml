@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
     
-    <listeners>
+   <!-- <listeners>
         <listener class-name="com.utils.Listener"/>
-    </listeners>
+    </listeners>  -->
  
- <test name="Login Test">
-    <classes>
+ <test name="Login Test"> 
+    <classes> 
       
       <class name="com.class02.AssertionsDemo"/>
       <class name="com.class01.TitleLogoAndLoginVerification"/>
@@ -20,5 +20,6 @@
       <classes>
            <class name="com.class02.SoftAssertions"/>
       </classes>
-      </test>
+  </test>
 </suite> <!-- Suite -->
+ 

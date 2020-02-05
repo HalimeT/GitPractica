@@ -21,6 +21,7 @@ public void closeBrowser() {
 }
 @Test
 public void titleVAlidation() {
+	
 	String expectedTitle="Human Management System";
 	String actualTitle=driver.getTitle();
 	if(actualTitle.equals(expectedTitle)) {

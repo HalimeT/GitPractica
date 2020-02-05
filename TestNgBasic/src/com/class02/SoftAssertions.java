@@ -26,12 +26,13 @@ public class SoftAssertions extends CommonMethods {
         boolean logoDisplayed = driver.findElement(By.xpath("//div[@id='divLogo']/img")).isDisplayed(); 	
       //Hard Assert will fail and execution will stop at that point 
       //  Assert.assertTrue(isDisplayed, "Logo is NOT displayed");
-        logoDisplayed=false;  
+        logoDisplayed=false; 
+        
         SoftAssert softAssert=new SoftAssert();
       softAssert.assertTrue(logoDisplayed, "Logo is NOT displayed");
         
         driver.findElement(By.name("txtUsername")).sendKeys("Admin");
-        driver.findElement(By.name("txtPassword")).sendKeys("Hum@nhrm123");
+        driver.findElement(By.name("txtPassword")).sendKeys("Syntax@123");
         driver.findElement(By.name("Submit")).click();
        
         boolean welcomeDisplayed=driver.findElement(By.id("welcome")).isDisplayed();

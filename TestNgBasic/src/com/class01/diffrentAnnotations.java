@@ -36,8 +36,12 @@ public class diffrentAnnotations {
 	public void AfterMethod() {
 		System.out.println("AfterMethod");		
 	}
-	@Test
+	@Test(priority=1)
 	public void test () {
 		System.out.println("I am an actual test ");
+	}
+	@Test(priority=2)
+	public void atest () {
+		System.out.println("I am an actual test 2 ");
 	}
 }
